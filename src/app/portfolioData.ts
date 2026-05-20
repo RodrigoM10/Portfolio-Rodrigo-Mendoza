@@ -1,3 +1,5 @@
+import { AllProjects } from "./components/AllProjects";
+
 export const portfolioData = {
   es: {
     hero: {
@@ -19,28 +21,33 @@ export const portfolioData = {
         stats: [
             { value: "5+", label: "2020/2021" },
             { value: "10+", label: "Proyectos" },
-            { value: "3", label: "IT | Negocios | Industria Química" } 
+            { value: "3", label: "IT|Negocios|Industria Qca." } 
         ],
         stackLabel: "Stack Tecnológico",
         stackCategories: ["Datos", "Desarrollo Web", "Ingeniería"]
     },
    projectsSection: {
       label: "02 / Proyectos",
-      title: "Trabajo Destacado",
+      title: "Trabajos Destacados",
       items: [
         {
-          id: "telemetry",
-          title: "Plataforma de Telemetría Cloud",
-          subtitle: "BigQuery · Python · GCP",
-          description: "Desarrollo de una arquitectura de datos en la nube cerrando el ciclo completo de un sistema de telemetría, enviando y procesando logs para análisis.",
-          tags: ["Python", "BigQuery", "Data Eng"],
+          id: "reactor",
+          title: "Reactor Batch Modeling & Simulation",
+          subtitle: "Python · Simulación Industrial",
+          description: "Proyecto de Tesis de Ingeniería: Desarrollo de un modelo de simulación interactivo en Python para predecir y optimizar el comportamiento termodinámico de un reactor químico.",
+          tags: ["Python", "React", "Ing. Química", "Simulación"],
+          link: "https://batch-reactor-front.vercel.app/",
+          linkGitHub: "https://github.com/RodrigoM10/Batch-Reactor-Simulate",
         },
         {
-          id: "reactor",
-          title: "Digital Twin: Reactor Batch",
-          subtitle: "Python · Simulación Industrial",
-          description: "Proyecto de Tesis: Desarrollo de un modelo de simulación interactivo en Python para predecir y optimizar el comportamiento termodinámico de un reactor químico.",
-          tags: ["Python", "Ing. Química", "Simulación"],
+          id: "telemetry",
+          title: "Digital Twin & Cloud SCADA HMI",
+          subtitle: "Digital Twin · BigQuery · Python ",
+          description: "Este proyecto es una implementación completa End-to-End de 3 GemeloS Digitales para equipamiento industrial. Fusiona la ingeniería de procesos con el Data Engineering moderno, simulando el comportamiento físico y el control automático (PID) de sistemas reales, mientras transmite telemetría asíncrona a la nube para su monitoreo y análisis en una interfaz web de alto rendimiento.",
+          tags: ["Python", "BigQuery", "Data Eng", "Ing. Química"],
+          link: "https://batch-reactor-front.vercel.app/",
+          linkGitHub: "https://github.com/RodrigoM10/Digital-Twin"
+
         },
         {
           id: "automation",
@@ -48,6 +55,9 @@ export const portfolioData = {
           subtitle: "Python · Scripts · SM Contenedores",
           description: "Digitalización de operaciones logísticas y desarrollo de pipelines para automatizar la facturación mensual y la gestión administrativa de la empresa.",
           tags: ["Python", "Automatización", "Logística"],
+          link: "https://batch-reactor-front.vercel.app/",
+          linkGitHub: ""
+
         },
         {
           id: "b2b",
@@ -55,6 +65,29 @@ export const portfolioData = {
           subtitle: "Full-Stack · We Know Inc",
           description: "Desarrollo e implementación de módulos de software escalables para un sistema de gestión corporativa (ERP) trabajando de forma remota en equipo.",
           tags: ["Web Dev", "Software Arch", "B2B"],
+          link: "https://batch-reactor-front.vercel.app/",
+          linkGitHub: ""
+
+        },
+      ],
+      allProjects: [
+         {
+          id: "project 1",
+          title: "Sistema de Gestión Empresarial",
+          subtitle: "Full-Stack.",
+          description: "Desarrollo e implementación de módulos de software escalables para un sistema de gestión corporativa (ERP) trabajando de forma remota en equipo.",
+          tags: ["Web Dev", "Software Arch", "B2B"],
+          link: "https://batch-reactor-front.vercel.app/",
+          linkGitHub: "https://batch-reactor-front.vercel.app/"
+        },
+         {
+          id: "project 2",
+          title: "Sistema de Gestión Empresarial",
+          subtitle: "Full-Stack.",
+          description: "Desarrollo e implementación de módulos de software escalables para un sistema de gestión corporativa (ERP) trabajando de forma remota en equipo.",
+          tags: ["Web Dev", "Software Arch", "B2B"],
+          link: "https://batch-reactor-front.vercel.app/",
+          linkGitHub: "https://batch-reactor-front.vercel.app/"
         },
       ]
     },
@@ -181,6 +214,8 @@ export const portfolioData = {
           subtitle: "BigQuery · Python · GCP",
           description: "Development of a cloud-native data architecture closing the full lifecycle of a telemetry system, ingesting and processing logs for analysis.",
           tags: ["Python", "BigQuery", "Data Eng"],
+          link: "",
+          linkGitHub: ""
         },
         {
           id: "reactor",
@@ -188,6 +223,8 @@ export const portfolioData = {
           subtitle: "Python · Industrial Simulation",
           description: "Thesis Project: Development of an interactive simulation model in Python to predict and optimize the thermodynamic behavior of a chemical reactor.",
           tags: ["Python", "Chem Eng", "Simulation"],
+          link: "",
+          linkGitHub: ""
         },
         {
           id: "automation",
@@ -195,6 +232,8 @@ export const portfolioData = {
           subtitle: "Python · Scripts · SM Contenedores",
           description: "Digitalization of logistics operations and development of pipelines to automate monthly billing and administrative management for the company.",
           tags: ["Python", "Automation", "Logistics"],
+          link: "",
+          linkGitHub: ""
         },
         {
           id: "b2b",
@@ -202,6 +241,28 @@ export const portfolioData = {
           subtitle: "Full-Stack · We Know Inc",
           description: "Development and implementation of scalable software modules for a corporate management system (ERP) working remotely within a team.",
           tags: ["Web Dev", "Software Arch", "B2B"],
+          link: "",
+          linkGitHub: ""
+        },
+      ],
+       allProjects: [
+         {
+          id: "project 1",
+          title: "Sistema de Gestión Empresarial",
+          subtitle: "Full-Stack.",
+          description: "Desarrollo e implementación de módulos de software escalables para un sistema de gestión corporativa (ERP) trabajando de forma remota en equipo.",
+          tags: ["Web Dev", "Software Arch", "B2B"],
+          link: "https://batch-reactor-front.vercel.app/",
+          linkGitHub: "https://batch-reactor-front.vercel.app/"
+        },
+         {
+          id: "project 2",
+          title: "Sistema de Gestión Empresarial",
+          subtitle: "Full-Stack.",
+          description: "Desarrollo e implementación de módulos de software escalables para un sistema de gestión corporativa (ERP) trabajando de forma remota en equipo.",
+          tags: ["Web Dev", "Software Arch", "B2B"],
+          link: "https://batch-reactor-front.vercel.app/",
+          linkGitHub: "https://batch-reactor-front.vercel.app/"
         },
       ]
     },

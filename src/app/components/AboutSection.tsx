@@ -9,8 +9,8 @@ const getTechStack = (categories: string[]) => [
     color: "#00D084",
     items: [
       { name: "Python", icon: "🐍" },
-      { name: "BigQuery", icon: "⬡" },
-      { name: "Pandas", icon: "📊" },
+      { name: "Cloud | BigQuery", icon: "⬡" },
+      { name: "Pandas | Numpy", icon: "📊" },
       { name: "Scikit-Learn", icon: "⚙" }, 
     ],
   },
@@ -18,10 +18,10 @@ const getTechStack = (categories: string[]) => [
     category: categories[1], 
     color: "#5B9BD5",
     items: [
-      { name: "React", icon: "⚛" },
+      { name: "React / Next", icon: "⚛" },
       { name: "Node.js", icon: "⬡" },
       { name: "APIs", icon: "⚡" },
-      { name: "SQL", icon: "🗄" },
+      { name: "SQL / NoSQL", icon: "🗄" },
     ],
   },
   {

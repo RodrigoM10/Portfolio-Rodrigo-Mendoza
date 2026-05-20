@@ -1,6 +1,8 @@
 import { motion } from "motion/react";
+import { Link } from "react-router";
 import { AreaChart, Area, ResponsiveContainer, BarChart, Bar, XAxis } from "recharts";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ArrowRight } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import { useLanguage } from "../LanguageContext";
 import { portfolioData } from "../portfolioData";
 
@@ -21,7 +23,7 @@ function TelemetryVisual() {
           <div className="w-4 h-4 rounded-sm bg-[#1A73E8] flex items-center justify-center">
             <span style={{ fontSize: "8px", color: "white", fontWeight: "bold" }}>BQ</span>
           </div>
-          <span className="font-['Inter'] text-[#00D084]" style={{ fontSize: "9px" }}>cloud_telemetry.daily_metrics</span>
+          <span className="font-['Inter'] text-[#00D084]" style={{ fontSize: "9px" }}>digitalTwin.daily_metrics</span>
         </div>
         <span className="font-['Inter'] text-gray-600" style={{ fontSize: "8px" }}>LIVE</span>
       </div>
@@ -267,10 +269,8 @@ export function ProjectsGrid() {
           {currentData.title}
         </motion.h2>
 
-        {/* 2×2 Grid */}
         <div className="grid md:grid-cols-2 gap-5">
           {currentData.items.map((proj, i) => {
-            // Obtenemos el componente visual basado en el ID del proyecto
             const Visual = projectVisuals[proj.id];
             
             return (
@@ -286,10 +286,29 @@ export function ProjectsGrid() {
                 <div className="h-52 relative overflow-hidden">
                   {Visual && <Visual />}
                   <div className="absolute inset-0 bg-[#00D084]/0 group-hover:bg-[#00D084]/3 transition-all duration-300" />
-                  <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                    <div className="w-7 h-7 rounded-full bg-[#00D084]/20 border border-[#00D084]/40 flex items-center justify-center">
-                      <ArrowUpRight size={12} className="text-[#00D084]" />
-                    </div>
+                  <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center gap-2">
+                      {proj.link && (
+                        <a
+                          href={proj.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-8 h-8 rounded-full bg-[#00D084]/20 border border-[#00D084]/40 hover:bg-[#00D084]/30 flex items-center justify-center transition-all duration-200 hover:scale-105"
+                          title="Ver proyecto en vivo"
+                        >
+                          <ArrowUpRight size={12} className="text-[#00D084]" />
+                        </a>
+                      )}
+                      {proj.linkGitHub && (
+                        <a
+                          href={proj.linkGitHub}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-8 h-8 rounded-full bg-[#00D084]/20 border border-[#00D084]/40 hover:bg-[#00D084]/30 flex items-center justify-center transition-all duration-200 hover:scale-105"
+                          title="Ver codigo"
+                        >
+                          <FaGithub  size={12} className="text-[#00D084]" />
+                        </a>
+                      )}
                   </div>
                 </div>
 
@@ -332,6 +351,21 @@ export function ProjectsGrid() {
             );
           })}
         </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-16 flex justify-center"
+        >
+          <Link
+            to="/allProjects"
+            className="group flex items-center gap-2 font-['Space_Grotesk'] text-gray-400 hover:text-[#00D084] transition-colors duration-300 uppercase tracking-widest text-sm border border-white/5 hover:border-[#00D084]/30 px-8 py-3 rounded-full bg-[#161616]"
+          >
+            {language === 'es' ? 'Ver todos los proyectos' : 'View all projects'}
+            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
