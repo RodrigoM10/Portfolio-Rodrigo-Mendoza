@@ -4,18 +4,8 @@ import { portfolioData } from "../portfolioData";
 
 
 const getTechStack = (categories: string[]) => [
-  {
-    category: categories[0], // Data / Datos
-    color: "#00D084",
-    items: [
-      { name: "Python", icon: "🐍" },
-      { name: "Cloud | BigQuery", icon: "⬡" },
-      { name: "Pandas | Numpy", icon: "📊" },
-      { name: "Scikit-Learn", icon: "⚙" }, 
-    ],
-  },
-  {
-    category: categories[1], 
+   {
+    category: categories[0], 
     color: "#5B9BD5",
     items: [
       { name: "React / Next", icon: "⚛" },
@@ -24,6 +14,17 @@ const getTechStack = (categories: string[]) => [
       { name: "SQL / NoSQL", icon: "🗄" },
     ],
   },
+  {
+    category: categories[1],
+    color: "#00D084",
+    items: [
+      { name: "Python", icon: "🐍" },
+      { name: "Cloud | BigQuery", icon: "⬡" },
+      { name: "Pandas | Numpy", icon: "📊" },
+      { name: "Scikit-Learn", icon: "⚙" }, 
+    ],
+  },
+
   {
     category: categories[2], 
     color: "#E8965A",
