@@ -194,7 +194,7 @@ export const portfolioData = {
           role: "Full Stack Developer & Cloud Engineer",
           company: "SM Contenedores · Tucumán",
           type: "current",
-          description: "Desarrollo de backend en Python para automatizar el ciclo de facturación. Diseño y despliegue de telemetría en la nube (BigQuery) y construcción integral del sitio web corporativo.",
+          description: "Desarrollo de backend en Python para automatizar el ciclo de facturación. Diseño y despliegue de telemetría en la nube, y construcción integral del sitio web corporativo.",
           tags: ["Python", "Google Cloud", "Full Stack", "Automatización"],
           highlight: true,
         },
