@@ -5,6 +5,7 @@ import { AboutSection } from "./components/AboutSection";
 import { ProjectsGrid } from "./components/ProjectsGrid";
 import { ExperienceSection } from "./components/ExperienceSection";
 import { EducationSection } from "./components/EducationSection";
+import { PublicationsSection } from "./components/PublicationsSection";
 import { FooterSection } from "./components/FooterSection";
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
       <ProjectsGrid />
       <ExperienceSection />
       <EducationSection />
+      <PublicationsSection />
       <FooterSection />
     </div>
   );

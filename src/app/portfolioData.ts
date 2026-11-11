@@ -4,7 +4,7 @@ export const portfolioData = {
   es: {
     hero: {
       name: "Rodrigo Mendoza",
-      title: ["Ingeniero Químico", "Automatización de Procesos y Datos", "Transformación Digital e Industria 4.0", "Ingeniería de Datos", "Desarrollador de Software"],
+      title: ["Ingeniero Químico", "Data & Software Developer", "Industria 4.0"],
       description: "Conectando sistemas físicos y necesidades de negocio con inteligencia digital. Impulso la transformación digital y la Industria 4.0 creando herramientas escalables que integran automatización de procesos, ingeniería de datos y desarrollo de software.",
       location: "Tucumán, Argentina",
       available: "DISPONIBLE PARA TRABAJAR",
@@ -191,6 +191,15 @@ export const portfolioData = {
       },
       items: [
         {
+          period: "Nov '25 – Actualidad",
+          role: "Especialización en Datos e Industria 4.0",
+          company: "ITBA · Ingelearn",
+          type: "education",
+          description: "Año dedicado a formarme en Cloud Data Engineering (ITBA) y en el Diplomado en Industria 4.0 (Ingelearn), con foco en cómo integrar tecnología y datos en los procesos industriales para generar mejora continua.",
+          tags: ["Data Engineering", "Industria 4.0", "Cloud", "Mejora Continua"],
+          highlight: true,
+        },
+        {
           period: "Sep '24 – Oct '25",
           role: "Pasante de Producción",
           company: "Citromax S.A.C.I. · Tucumán, Argentina",
@@ -215,6 +224,15 @@ export const portfolioData = {
           type: "remote",
           description: "Integración de sistemas ERP/CRM conectando infraestructuras web (WordPress/MySQL) con aplicaciones móviles nativas desarrolladas en Android Studio.",
           tags: ["Java/Kotlin", "MySQL", "ERP/CRM", "Integración"],
+          highlight: false,
+        },
+        {
+          period: "Ene '22 – Mar '22",
+          role: "Software Development Trainee",
+          company: "Alkemy · Argentina",
+          type: "remote",
+          description: "Apprenticeship en desarrollo frontend: construcción de un proyecto en React.js trabajando bajo metodología Scrum con Jira.",
+          tags: ["React.js", "Frontend", "Scrum", "Jira"],
           highlight: false,
         },
         {
@@ -266,8 +284,24 @@ export const portfolioData = {
       },
     ]
     },
+    publicationsSection: {
+      label: "05 / Publicaciones",
+      title: "Publicaciones",
+      linkLabel: "Ver publicación",
+      items: [
+        {
+          type: "Tesis de Grado",
+          title: "Modelado y Simulación de un Reactor Batch",
+          venue: "Universidad Nacional de Tucumán (UNT)",
+          year: "2025",
+          description: "Desarrollo de un modelo de simulación interactivo en Python para predecir y optimizar el comportamiento termodinámico de un reactor químico batch.",
+          tags: ["Ingeniería Química", "Simulación", "Python"],
+          link: "", // TODO: link de LinkedIn
+        },
+      ]
+    },
     contactSection: {
-      label: "04 / Contacto",
+      label: "06 / Contacto",
       titleLine1: "Construyamos algo",
       titleHighlight: "juntos.",
       description: "Disponible para proyectos remotos en desarrollo de datos, automatización y full-stack. Ya sea un pipeline en la nube, un modelo de simulación o un sistema de gestión completo, me encantaría conocer tu propuesta.",
@@ -279,7 +313,7 @@ export const portfolioData = {
   en: {
     hero: {
     name: "Rodrigo Mendoza",
-    title: ["Chemical Engineer", "Process & Data Automation", "Digital Transformation & Industry 4.0", "Data Engineering", "Software Developer"],
+    title: ["Chemical Engineer", "Data & Software Developer", "Industry 4.0"],
     description: "Connecting physical systems and business needs with digital intelligence. I drive digital transformation and Industry 4.0 by building scalable tools that integrate process automation, data engineering and software development.",
     location: "Tucumán, Argentina",
     available: "OPEN TO WORK",
@@ -465,6 +499,15 @@ export const portfolioData = {
       },
       items: [
         {
+          period: "Nov '25 – Present",
+          role: "Specialization in Data & Industry 4.0",
+          company: "ITBA · Ingelearn",
+          type: "education",
+          description: "A year dedicated to studying Cloud Data Engineering (ITBA) and the Industry 4.0 Diploma (Ingelearn), focused on bringing technology and data into industrial processes to drive continuous improvement.",
+          tags: ["Data Engineering", "Industry 4.0", "Cloud", "Continuous Improvement"],
+          highlight: true,
+        },
+        {
           period: "Sep '24 – Oct '25",
           role: "Production Intern",
           company: "Citromax S.A.C.I. · Tucumán, Argentina",
@@ -489,6 +532,15 @@ export const portfolioData = {
           type: "remote",
           description: "Integration of ERP/CRM systems by connecting existing web infrastructures (WordPress/MySQL) with native mobile applications developed in Android Studio.",
           tags: ["Java/Kotlin", "MySQL", "ERP/CRM", "Integration"],
+          highlight: false,
+        },
+        {
+          period: "Jan '22 – Mar '22",
+          role: "Software Development Trainee",
+          company: "Alkemy · Argentina",
+          type: "remote",
+          description: "Frontend development apprenticeship: built a React.js project following the Scrum methodology with Jira.",
+          tags: ["React.js", "Frontend", "Scrum", "Jira"],
           highlight: false,
         },
         {
@@ -541,8 +593,24 @@ export const portfolioData = {
       },
     ]
     },
+  publicationsSection: {
+      label: "05 / Publications",
+      title: "Publications",
+      linkLabel: "View publication",
+      items: [
+        {
+          type: "Undergraduate Thesis",
+          title: "Modeling and Simulation of a Batch Reactor",
+          venue: "National University of Tucumán (UNT)",
+          year: "2025",
+          description: "Development of an interactive Python simulation model to predict and optimize the thermodynamic behavior of a batch chemical reactor.",
+          tags: ["Chemical Engineering", "Simulation", "Python"],
+          link: "", // TODO: LinkedIn link
+        },
+      ]
+    },
   contactSection: {
-      label: "04 / Contact",
+      label: "06 / Contact",
       titleLine1: "Let's build something",
       titleHighlight: "together.",
       description: "Available for remote data engineering, automation and full-stack projects. Whether it's a cloud pipeline, a simulation model, or a complete enterprise system — I'd love to hear about it.",
