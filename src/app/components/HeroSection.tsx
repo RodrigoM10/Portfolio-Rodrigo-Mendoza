@@ -64,15 +64,20 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.55 }}
           className="w-32 h-px bg-gradient-to-r from-transparent via-[#00D084] to-transparent mx-auto mb-6"
         />
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.65 }}
-          className="font-['Inter'] text-[#00D084] font-semibold mb-6 tracking-widest uppercase"
-          style={{ fontSize: "clamp(0.7rem, 1.5vw, 0.9rem)", letterSpacing: "0.25em" }}
+          className="font-['Inter'] text-[#00D084] font-semibold mb-6 uppercase flex flex-wrap justify-center items-center gap-x-3 gap-y-1 max-w-4xl mx-auto"
+          style={{ fontSize: "clamp(0.7rem, 1.5vw, 0.9rem)", letterSpacing: "0.15em" }}
         >
-          {currentData.title}
-        </motion.p>
+          {currentData.title.map((role, i) => (
+            <span key={role} className="flex items-center gap-x-3">
+              {i > 0 && <span aria-hidden="true" className="text-[#00D084]/50">·</span>}
+              <span className="whitespace-nowrap">{role}</span>
+            </span>
+          ))}
+        </motion.div>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

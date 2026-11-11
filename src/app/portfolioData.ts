@@ -4,8 +4,8 @@ export const portfolioData = {
   es: {
     hero: {
       name: "Rodrigo Mendoza",
-      title: "Full Stack Developer | Ingeniero Químico",
-      description: "Conectando sistemas físicos y necesidades de negocio con inteligencia digital. Creo herramientas tecnológicas escalables integrando desarrollo fullstack, ciencia de datos y automatización.",
+      title: ["Ingeniero Químico", "Automatización de Procesos y Datos", "Transformación Digital e Industria 4.0", "Ingeniería de Datos", "Desarrollador de Software"],
+      description: "Conectando sistemas físicos y necesidades de negocio con inteligencia digital. Impulso la transformación digital y la Industria 4.0 creando herramientas escalables que integran automatización de procesos, ingeniería de datos y desarrollo de software.",
       location: "Tucumán, Argentina",
       available: "DISPONIBLE PARA TRABAJAR",
       btnProjects: "VER PROYECTOS",
@@ -14,7 +14,7 @@ export const portfolioData = {
     about: {
         label: "01 / Sobre mí",
         titleLine1: "Donde la Ingeniería",
-        titleHighlight: "evoluciana en",
+        titleHighlight: "evoluciona en",
         titleLine2: "software y datos",
         description1: "Ingeniero Químico con sólida experiencia en desarrollo fullstack y una creciente especialización en Data Science y Data Engineering. Interesado en actuar como puente entre los desafíos del mundo real y la inteligencia digital, conectando sistemas físicos con soluciones tecnológicas.",
         description2: "Desde el modelado y simulación de reactores como tesis de grado, hasta pipelines en la nube, plataformas de e-commerce, aplicaciones móviles y sistemas de gestión empresarial; construyo soluciones que traducen el conocimiento técnico en herramientas de negocio escalables.",
@@ -43,7 +43,7 @@ export const portfolioData = {
           id: "telemetry",
           title: "Digital Twin & Cloud SCADA HMI",
           subtitle: "Digital Twin · BigQuery · Python ",
-          description: "Este proyecto es una implementación completa End-to-End de 3 GemeloS Digitales para equipamiento industrial. Fusiona la ingeniería de procesos con el Data Engineering moderno, simulando el comportamiento físico y el control automático (PID) de sistemas reales, mientras transmite telemetría asíncrona a la nube para su monitoreo y análisis en una interfaz web de alto rendimiento.",
+          description: "Este proyecto es una implementación completa End-to-End de 3 Gemelos Digitales para equipamiento industrial. Fusiona la ingeniería de procesos con el Data Engineering moderno, simulando el comportamiento físico y el control automático (PID) de sistemas reales, mientras transmite telemetría asíncrona a la nube para su monitoreo y análisis en una interfaz web de alto rendimiento.",
           tags: ["Python", "BigQuery", "Data Eng", "Ing. Química"],
           link: "https://digital-twin-wine.vercel.app/",
           linkGitHub: "https://github.com/RodrigoM10/Digital-Twin"
@@ -61,7 +61,7 @@ export const portfolioData = {
           id: "b2b",
           title: "Sistema de Gestión Interno - In Process ",
           subtitle: "Full-Stack · SM Contenedores",
-          description: "Desarrollo e implementación de módulos de software escalables para un sistema de gestión corporativa. Trackeo en tiempo real y logistica.",
+          description: "Desarrollo e implementación de módulos de software escalables para un sistema de gestión corporativa. Trackeo en tiempo real y logística.",
           tags: ["Web Dev", "Software Arch", "B2B"],
           link: "",
           linkGitHub: ""
@@ -81,7 +81,7 @@ export const portfolioData = {
           id: "telemetry",
           title: "Digital Twin & Cloud SCADA HMI",
           subtitle: "Digital Twin · BigQuery · Python ",
-          description: "Este proyecto es una implementación completa End-to-End de 3 GemeloS Digitales para equipamiento industrial. ",
+          description: "Este proyecto es una implementación completa End-to-End de 3 Gemelos Digitales para equipamiento industrial. ",
           tags: ["Python", "BigQuery", "Data Eng", "Ing. Química"],
           link: "https://digital-twin-wine.vercel.app/",
           linkGitHub: "https://github.com/RodrigoM10/Digital-Twin"
@@ -287,8 +287,8 @@ export const portfolioData = {
   en: {
     hero: {
     name: "Rodrigo Mendoza",
-    title: "Software & Data Developer | Chemical Engineer",
-    description: "Connecting physical systems and business needs with digital intelligence. I create scalable technology tools integrating fullstack development, data science and automation.",
+    title: ["Chemical Engineer", "Process & Data Automation", "Digital Transformation & Industry 4.0", "Data Engineering", "Software Developer"],
+    description: "Connecting physical systems and business needs with digital intelligence. I drive digital transformation and Industry 4.0 by building scalable tools that integrate process automation, data engineering and software development.",
     location: "Tucumán, Argentina",
     available: "OPEN TO WORK",
     btnProjects: "PROJECTS",
