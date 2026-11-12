@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Github, Linkedin, Mail, ArrowUpRight } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import { useLanguage } from "../LanguageContext";
 import { portfolioData } from "../portfolioData";
 
@@ -60,18 +60,6 @@ export function FooterSection() {
           >
             {currentData.description}
           </p>
-
-          {/* Primary CTA */}
-          <motion.a
-            href={socialLinks[2].href} // Toma el email del array socialLinks
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
-            className="inline-flex items-center gap-2.5 font-['Space_Grotesk'] bg-[#00D084] hover:bg-[#00b870] text-[#0a0a0a] px-10 py-4 rounded-sm transition-colors duration-200 shadow-[0_0_40px_rgba(0,208,132,0.25)] hover:shadow-[0_0_60px_rgba(0,208,132,0.4)] mb-12"
-            style={{ fontSize: "0.85rem", letterSpacing: "0.08em" }}
-          >
-            {currentData.cta}
-            <ArrowUpRight size={16} />
-          </motion.a>
 
           {/* Social links */}
           <div className="flex items-center justify-center gap-5">
